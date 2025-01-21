@@ -21,13 +21,19 @@
       align-items: center;
       height: 100%;
       width: 100%;
+      overflow: hidden;
     }
 
     /* Tracker Container */
     .tracker-container {
       width: 100%; /* Full Width */
-      max-width: 100%; /* Remove any width limit */
-      padding: 0; /* Remove padding */
+      height: 100%; /* Full Height */
+      max-width: 100%; /* No restriction on width */
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
     /* Progress Bar */
@@ -37,6 +43,7 @@
       height: 20px;
       border-radius: 10px;
       overflow: hidden;
+      width: 100%; /* Full Width */
     }
 
     .progress-bar-fill {
@@ -72,6 +79,7 @@
       height: 8px;
       display: flex;
       justify-content: space-between;
+      width: 100%;
     }
 
     .hour-tick {
