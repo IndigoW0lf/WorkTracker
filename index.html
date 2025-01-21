@@ -12,37 +12,41 @@
       box-sizing: border-box;
     }
 
-    /* Page Styling */
+    /* Transparent Background */
     body {
+      background-color: transparent;
+      font-family: Arial, sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background-color: #f9f9f9;
-      font-family: Arial, sans-serif;
     }
 
-    /* Progress Bar Container */
-    .progress-container {
+    /* Tracker Container */
+    .tracker-container {
       width: 90%;
-      max-width: 800px;
+      max-width: 600px;
+      /* Uncomment this line for a beige background box */
+      /* background-color: #ded6cb; */
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
     }
 
     /* Progress Bar */
     .progress-bar {
       position: relative;
       background-color: #ded6cb;
-      height: 30px;
-      border-radius: 15px;
+      height: 20px;
+      border-radius: 10px;
       overflow: hidden;
-      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
     }
 
     .progress-bar-fill {
       width: 0;
       background-color: #ad776b;
       height: 100%;
-      border-radius: 15px;
+      border-radius: 10px;
       transition: width 0.5s;
     }
 
@@ -52,36 +56,36 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 16px;
-      color: #ffffff;
+      font-size: 14px;
+      color: #ded6cb; /* Light beige font */
     }
 
     /* Time Ticks and Labels */
     .time-labels {
       display: flex;
       justify-content: space-between;
-      margin-top: 10px;
-      font-size: 14px;
-      color: #6b6b6b;
+      margin-top: 5px;
+      font-size: 12px;
+      color: #ded6cb; /* Light beige font */
     }
 
     .hour-ticks {
       position: relative;
       margin-top: 5px;
-      height: 10px;
+      height: 8px;
       display: flex;
       justify-content: space-between;
     }
 
     .hour-tick {
       width: 1px;
-      height: 10px;
-      background-color: #ad776b;
+      height: 8px;
+      background-color: #ded6cb; /* Light beige tick marks */
     }
   </style>
 </head>
 <body>
-  <div class="progress-container">
+  <div class="tracker-container">
     <!-- Progress Bar -->
     <div class="progress-bar">
       <div id="progress-bar-fill" class="progress-bar-fill"></div>
